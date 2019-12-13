@@ -6,13 +6,12 @@ Your function must utilize recursion. It cannot contain any loops.
 
 """
 declare the sub-string we will look for, "th"
-decare count as 0
 input the word string into the function
-if the input is not a string or has len of 0, exit function, return 0
+if the input is not a string or has len of 1 or 0, exit function, return 0
 function:
     search the left-most character i of the word the letter "t" and i+1 for "h"
     if true add 1 to count
-    set word to word minus 1
+    set word to word minus 1 index
 call function again until there is only 1 character in word left
 
 
@@ -21,7 +20,6 @@ call function again until there is only 1 character in word left
 
 def count_th(word):
     substring = "th"
-    count = 0
     if len(word) < 2:
         return 0
     elif word[:2] == substring:
