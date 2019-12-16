@@ -4,7 +4,8 @@
 
 a)
 a=0 is executed once and is O(1)
-while loop grows with size of n and executes from 0 to n^3 is O(n)
+while loop grows with size of n and executes one time each from 0 to n^3 and is O(n)
+i.e. while (0 < 81)
 the inside addition is also O(1)
 The formula is O(n)
 
@@ -15,7 +16,7 @@ j=1 is O(1)
 the while loop is nested in for loop, so its O(n*n)
 size of n doesn't matter to complexity of inner mutiplication and sum, so they're O(1)
 O(n)+O(n*n) =
-The formula is O(n^3)
+The formula is O(n^2)
 
 c)
 if statement is linear and contributes at O(n)
